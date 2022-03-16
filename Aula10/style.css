@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;300&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,10 +8,9 @@
 
 body {
   background-color: #e5e5e5;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   width: 1024px;
   height: 1024px;
-  border: solid blue 3px;
 }
 
 .desconto {
@@ -100,6 +101,8 @@ main {
   margin-top: 80px;
   color: #000000;
   font-style: normal;
+  font-weight: 400;
+  line-break: 35px;
 }
 
 .card__descricao {
@@ -110,13 +113,14 @@ main {
   display: block;
   width: 301.33px;
   height: 127.53px;
+  line-height: 19px;
 }
 
 .btn a {
   text-decoration: none;
   text-align: center;
   color: white;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .btn {
@@ -125,10 +129,11 @@ main {
   border: none;
   width: 145.34px;
   height: 54.76px;
-  margin-top: 70px;
+  margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
   border-radius: 10px;
+  display: block;
 }
 
 .footer {
