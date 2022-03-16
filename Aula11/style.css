@@ -7,24 +7,25 @@
   --cor-preto: #222222;
   --cor-vermelho: #fc200c;
   --cor-verde: #39b24a;
+  --cor-branco: #f3f3f3;
 }
 
 body {
   width: 1024px;
   height: 678px;
-  background-color: #e5e5e5;
-  border: solid red 5px;
+  background-color: var(--cor-branco);
   font-family: 'Roboto', sans-serif;
 }
 
 header {
   width: 100%;
+  height: 100px;
   display: flex;
   flex-direction: row;
   align-items: center; /*gap:25px*/
   justify-content: space-between;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: #222222;
+  background-color: var(--cor-preto);
 }
 
 .logo {
@@ -32,7 +33,6 @@ header {
 }
 
 .menu {
-  height: 100px;
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -93,6 +93,7 @@ span p {
 
 .cardapio {
   height: 350px;
+  width: 491px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -102,8 +103,8 @@ span p {
 }
 
 .cardapio__2 {
-  height: 350px;
-  width: 491px;
+  height: 250px;
+  width: 385px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -112,10 +113,11 @@ span p {
 
 .cardapio__3 {
   height: 178px;
+  width: 146px;
 }
 
-span .cadapio__pizza {
-  height: 28px;
+span .cardapio__pizza {
+  line-height: 28px;
   font-weight: bold;
   margin-top: 26px;
   text-align: center;
@@ -124,14 +126,16 @@ span .cadapio__pizza {
 .cardapio__3 h2 {
   padding: 10px;
 }
+
 ol li {
   color: #222222;
   font-size: 16px;
   font-weight: bold;
-  padding: 10px;
+  line-height: 19px;
+  padding: 5px;
 }
 
-.a li {
+.menu__footer li {
   list-style-type: none;
   text-decoration: none;
   padding-left: 20px;
@@ -141,11 +145,15 @@ ol li {
 }
 
 footer {
+  position: absolute;
   width: 1024px;
   height: 150px;
   margin-top: 35px;
-  background-color: #222222;
+  background-color: var(--cor-preto);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer nav {
@@ -168,4 +176,8 @@ footer .menu {
 
 .footer__logo {
   margin-right: 0px;
+  position: relative;
+  width: 212px;
+  height: 80px;
+  padding-left: 681px;
 }
