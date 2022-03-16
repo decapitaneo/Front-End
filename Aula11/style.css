@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-border;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*gap:25px*/
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.menu {
+  height: 100px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 13px;
+  margin-right: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #f3f3f3;
+  font-size: 16px;
+}
+
+.container {
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+  margin-left: 19px;
+  gap: 5px;
+  background-color: #e5e5e5;
+}
+
+.card__background {
+  background-image: url(../Aula11/img/delivery.jpg);
+  background-repeat: no-repeat;
+}
+
+.card__background h1 {
+  color: #fc200c;
+  height: 350px;
+  width: 490px;
+}
+
+h2 {
+  color: #222222;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+span {
+  color: white;
+}
+
+span p {
+  color: #fc200c;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cardapio {
+  height: 350px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
+.cardapio__2 {
+  height: 350px;
+  width: 491px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cardapio__3 {
+  height: 178px;
+}
+
+span .cadapio__pizza {
+  height: 28px;
+  font-weight: bold;
+  margin-top: 26px;
+  text-align: center;
+}
+
+.cardapio__3 h2 {
+  padding: 10px;
+}
+ol li {
+  color: #222222;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.a {
+  list-style-type: none;
+  text-decoration: none;
+  padding-top: 19px;
+  padding-left: 20px;
+}
+
+footer .menu {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.rodape {
+  margin-top: 35px;
+}
+
+.footer__logo {
+  margin-right: 0px;
+}
