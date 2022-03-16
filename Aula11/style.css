@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;300&display=swap');
+
 * {
   box-sizing: border-border;
   padding: 0;
   margin: 0;
+  --cor-preto: #222222;
+  --cor-vermelho: #fc200c;
+  --cor-verde: #39b24a;
 }
 
 body {
@@ -9,6 +14,7 @@ body {
   height: 678px;
   background-color: #e5e5e5;
   border: solid red 5px;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
