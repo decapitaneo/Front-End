@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;300&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  width: 2056px;
+  height: 3589px;
+}
+
+.desconto {
+  width: 100%;
+  height: 38px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #1cd1b0;
+}
+
+.title {
+  height: 101px;
+  color: #000000;
+  line-height: 47px;
+  padding-top: 28px;
+  padding-left: 26px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 47px;
+  background-color: #00669f;
+  box-shadow: 0px 12px 11px -8px rgba(0, 0, 0, 0.58);
+}
+
+main {
+}
+
+.card {
+  width: 805px;
+  height: 872px;
+  margin-top: 86.11px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card__card {
+  height: 597.01px;
+  width: 374px;
+  border-radius: 30px 0 0;
+  background-color: #f3f3f3;
+  box-shadow: 0px 16px 15px -9px rgba(0, 0, 0, 0.81);
+  position: relative; /*very important*/
+}
+
+.card__background {
+  height: 218px;
+  width: 374px;
+  background-image: url('../Aula14/img/bat_background.png');
+  background-image: url('../Aula14/img/mara_background.png');
+  background-image: url('../Aula14/img/super_background.png');
+  background-image: url('../Aula14/img/arleq_background.png');
+  border-radius: 16px 16px 0px 0px;
+}
+
+.vector img {
+  position: absolute; /*very important*/
+  left: 20px;
+  top: 10px;
+}
+
+.card__background-radius img {
+  border-radius: 180px;
+  height: 135.43px;
+  width: 135.43px;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  position: absolute; /*preciso por o position e as posicoes left/top*/
+  left: 130px;
+  top: 150px;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 30px;
+  margin: 10px;
+  text-align: center;
+  margin-top: 80px;
+  color: #000000;
+  font-style: normal;
+  font-weight: 400;
+  line-break: 35px;
+}
+
+.card__descricao {
+  font-size: 16px;
+  text-align: center;
+  color: #333333;
+  text-decoration: none;
+  display: block;
+  width: 301.33px;
+  height: 127.53px;
+  line-height: 19px;
+}
+
+.btn a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.btn {
+  background-color: #00669f;
+  padding: 18px;
+  border: none;
+  width: 145.34px;
+  height: 54.76px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.footer {
+  height: 51px;
+  background-color: #00669f;
+  margin-top: 149px;
+}
+
+footer p {
+  padding-left: 28px;
+  padding-top: 16px;
+  color: #fff9f9;
+  font-size: 16px;
+}
