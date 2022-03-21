@@ -60,13 +60,12 @@ main {
 .card {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-around;
   margin-bottom: 190px;
 }
 
 .card__card {
-  height: 1364.5px;
   flex-basis: 45%;
   border-radius: 30px 0 0;
   background-color: #f3f3f3;
@@ -75,6 +74,9 @@ main {
   object-fit: cover;
   margin-top: 101px;
   margin-bottom: 83px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 44px;
 }
 
 .card__background {
@@ -137,46 +139,43 @@ main {
   background-repeat: no-repeat;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   position: absolute; /*preciso por o position e as posicoes left/top*/
-
-  left: 270px;
+  left: calc(50% - 352px / 2);
   top: 300px;
 }
 .elipse img {
   position: fixed;
   width: 150px;
   height: 150px;
-  left: 1874px;
-  top: 100px;
+  bottom: 50px;
+  right: 50px;
+  z-index: 100;
 }
 
 .texto {
-  width: 805px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 194px;
   text-align: center;
-  margin-left: 50px;
+  flex-grow: 1;
 }
 
 .titulo {
   font-size: 4rem;
   line-height: 75px;
-  height: 84px;
   margin-bottom: 32px;
   text-align: center;
-
   color: #000000;
   font-style: normal;
   font-weight: 400;
 }
 
 .card__descricao {
-  width: 718px;
-  height: 348px;
   display: block;
   margin-left: 44px;
+  margin-right: 44px;
+  flex-grow: 1;
 }
 
 .texto p {
