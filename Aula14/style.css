@@ -157,13 +157,14 @@ main {
   align-items: center;
   padding-top: 194px;
   text-align: center;
+  margin-left: 50px;
 }
 
 .titulo {
   font-size: 4rem;
   line-height: 75px;
   height: 84px;
-
+  margin-bottom: 32px;
   text-align: center;
 
   color: #000000;
@@ -179,7 +180,7 @@ main {
 }
 
 .texto p {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: justify;
   color: #333333;
   text-decoration: none;
@@ -191,19 +192,19 @@ main {
   text-decoration: none;
   text-align: center;
   color: white;
-  font-size: 1.25rem;
+  font-size: 3rem;
 }
 
 .btn {
   background-color: #00669f;
-  padding: 18px;
+  padding: 30px;
   border: none;
   width: 346px;
   height: 114px;
   margin-top: 32px;
   margin-right: auto;
   margin-left: auto;
-  border-radius: 5px;
+  border-radius: 7px;
   display: block;
 }
 
@@ -232,7 +233,6 @@ footer p {
   margin-top: 47px;
 }
 
-/*
 @media (max-width: 1200px) {
   .card__card {
     object-fit: cover;
@@ -245,4 +245,3 @@ footer p {
     width: 80%;
   }
 }
-*/
