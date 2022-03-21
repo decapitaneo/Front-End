@@ -226,10 +226,10 @@ footer p {
   line-height: 42px;
   text-align: center;
 }
-.github {
-  height: 67.36px;
-  margin-left: 362px;
-  margin-top: 47px;
+
+.github img {
+  margin-left: 352px;
+  padding-top: 47px;
 }
 
 @media (max-width: 1200px) {
