@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="cadastro.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Karla:wght@200;300;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="cabecalho">
+          <div class="desconto">
+            <p>20% de desconto em todos os produtos</p>
+          </div>
+
+          <div class="title">
+            <div class="logo">
+              <img src="img/logoloja.png" alt="" />
+            </div>
+            <div>
+              <h1>Super-Heroínas na Programação</h1>
+            </div>
+          </div>
+        </div>
+        <nav></nav>
+      </header>
+      <main>
+        <div class="formulario">
+          <div class="formulario__title">
+            <h1>Adicionar seu super-herói</h1>
+            <p>Adicione seu personagem favorito completando as informaçõe</p>
+          </div>
+
+          <div class="cadastro">
+            <form action="" method="post">
+              <fieldset classe="dados">
+                <div class="dados__nome__especie">
+                  <div class="dados__nome">
+                    <label for="name">*Nome</label>
+                    <input type="text" name="name" id="name" required />
+                  </div>
+                  <div class="dados_especie">
+                    <label for="especie">*Espécie</label>
+                    <input
+                      type="text"
+                      name="specie"
+                      id="especie"
+                      placeholder="Espécie"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="dados__nascimento__foto">
+                  <div class="dados__nascimento">
+                    <label for="dataNascimento">Data de Nascimento</label>
+                    <input
+                      type="date"
+                      name="dataNascimento"
+                      id="dataNascimento"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+
+                  <div class="add__photo__arq">
+                    <div class="add__photo">
+                      <h1>Adicionar Foto</h1>
+                      <div class="add__photo__arq__span">
+                        <label class="add__photo__input" for="addPhoto"
+                          >Selecionar arquivo
+                        </label>
+
+                        <input
+                          class="input__file"
+                          type="file"
+                          name="addPhoto"
+                          id="addPhoto"
+                          required
+                        />
+                        <span class="add__photo__span"
+                          >Nenhum arquivo selecionado</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="descricao__poderes">
+                <div class="descricao">
+                  <textarea
+                    name="descricao"
+                    id="descricao"
+                    placeholder="Descrição"
+                  ></textarea>
+                </div>
+                <div class="poderes__personages">
+                  <div class="poderes">
+                    <legend>Poderes</legend>
+                    <div class="poderes__checkbox">
+                      <div class="poderes__checkbox__input">
+                        <input
+                          type="checkbox"
+                          name="voar"
+                          id="voar"
+                          value="voar"
+                        />
+                        Voar
+                      </div>
+                      <div class="poderes__checkbox__input">
+                        <input
+                          type="checkbox"
+                          name="superInteligencia"
+                          id="superInteligencia"
+                          value="superInteligencia"
+                        />
+                        Super Inteligência
+                      </div>
+                      <div class="poderes__checkbox__input">
+                        <input
+                          type="checkbox"
+                          name="laser"
+                          id="laser"
+                          value="laser"
+                        />
+                        Vista de raio laser
+                      </div>
+                      <div class="poderes__checkbox__input">
+                        <input
+                          type="checkbox"
+                          name="superRico"
+                          id="superRico"
+                          value="superRico"
+                        />
+                        Super rico
+                      </div>
+                    </div>
+
+                    <div class="poderes__radio">
+                      <div class="poderes__radio__tipo">
+                        <label for="tipoPersonaje">Tipo de personaje</label>
+                      </div>
+
+                      <div class="poderes__checkbox__input">
+                        <label for="heroiHeroina">
+                          <input
+                            type="radio"
+                            name="heroiHeroina"
+                            id="heroiHeroina"
+                            value="heroiHeroina"
+                          />
+                          Herói / Heroína
+                        </label>
+                      </div>
+                      <div>
+                        <label for="vilaoVila">
+                          <input
+                            type="radio"
+                            name="vilaoVila"
+                            id="vilaoVila"
+                            value="vilaoVila"
+                          />
+                          Vilão / Vilã
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn__adicionar">
+                <a href="">Adicionar</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <p>Todos os direitos reservados a FRONT END I</p>
+        <a
+          class="github"
+          href="https://github.com/decapitaneo/Front-End/tree/main/Aula14"
+        >
+          <img src="img/github.png" alt="" />
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>

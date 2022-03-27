@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="test.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="formulario">
+      <h1>Cadastro de Programadores</h1>
+      <form action="" method="post">
+        <fieldset class="dados">
+          <!--Responsavel pelo agrupamento ="caixa"-->
+          <legend>Dados Pessoais</legend>
+          <div class="div">
+            <label for="nome">Nome:</label>
+            <!--label=etiqueta/ permite a digitaca o campo-->
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Informe seu nome"
+            />
+          </div>
+
+          <div class="div">
+            <label for="sobrenome">Sobrenome:</label>
+            <!--label=etiqueta/ permite a digitaca o campo-->
+            <input
+              type="text"
+              name="sobrenome"
+              id="sobrenome"
+              placeholder="Informe seu sobrenome"
+              required
+            />
+          </div>
+
+          <div class="div">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Informe seu email"
+              required
+            />
+          </div>
+          <div class="div">
+            <label for="telefone">Telefone:</label>
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              placeholder="Informe seu telefone"
+            />
+          </div>
+          <div class="div">
+            <label for="dtNascimento">Data de Nascimento: </label>
+            <input type="date" name="dtNascimento" id="dtNascimento" />
+          </div>
+        </fieldset>
+
+        <fieldset class="dados">
+          <legend>Dados Profissionais</legend>
+
+          <div class="especializacao">
+            <p>Qual a sua especializacao como desenvolvedor?</p>
+            <label for="esp-front">
+              <input type="radio" name="espDev" id="esp-front" />Front-end
+            </label>
+            <label for="esp-back">
+              <input type="radio" name="espDev" id="esp-back" />Back-end
+            </label>
+            <label for="esp-full">
+              <input type="radio" name="espDev" id="esp-full" />Fullstack
+            </label>
+          </div>
+
+          <div class="experiencia">
+            <p>Qual seu nível de experiência?</p>
+            <select name="exp" id="exp">
+              <optgroup label="Nível de experiência">
+                <option value="estágio">Estágio</option>
+                <option value="junior">Júnior</option>
+                <option value="pleno">Pleno</option>
+                <option value="senior">Senior</option>
+              </optgroup>
+            </select>
+            <!--
+              <select name="pais" id="pais">
+            <optgroup>
+              <option value="pais" placeholder="pais">Pais</option>
+            </optgroup>
+          </select>
+            -->
+          </div>
+          <div class="modalidad">
+            <p>Modalidae de trabalho</p>
+            <label for="mod-remoto">
+              <input type="checkbox" name="mod-remoto" id="mod-remoto" />Remoto
+            </label>
+            <label for="mod-presencial">
+              <input
+                type="checkbox"
+                name="mod-presencial"
+                id="mod-presencial"
+              />Presencial
+            </label>
+            <label for="mod-hibrido">
+              <input
+                type="checkbox"
+                name="mod-hibrido"
+                id="mod-hibrido"
+              />Hibrido
+            </label>
+          </div>
+
+          <div class="sobre">
+            <label for="sobre">Nos conte mais sobre você</label>
+            <textarea
+              name="sobre"
+              id="sobre"
+              placeholder="Nos conte sobre sua vida, seus hobbies, seus gostos..."
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <div class="botoes">
+          <input type="reset" value="limpar" />
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
