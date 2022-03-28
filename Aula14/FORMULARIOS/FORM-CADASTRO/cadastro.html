@@ -104,6 +104,7 @@
                     placeholder="Descrição"
                   ></textarea>
                 </div>
+
                 <div class="poderes__personages">
                   <div class="poderes">
                     <legend>Poderes</legend>
@@ -115,7 +116,7 @@
                           id="voar"
                           value="voar"
                         />
-                        Voar
+                        <p>Voar</p>
                       </div>
                       <div class="poderes__checkbox__input">
                         <input
@@ -124,7 +125,7 @@
                           id="superInteligencia"
                           value="superInteligencia"
                         />
-                        Super Inteligência
+                        <p>Super Inteligência</p>
                       </div>
                       <div class="poderes__checkbox__input">
                         <input
@@ -133,7 +134,7 @@
                           id="laser"
                           value="laser"
                         />
-                        Vista de raio laser
+                        <p>Vista de raio laser</p>
                       </div>
                       <div class="poderes__checkbox__input">
                         <input
@@ -142,7 +143,7 @@
                           id="superRico"
                           value="superRico"
                         />
-                        Super rico
+                        <p>Super rico</p>
                       </div>
                     </div>
 
@@ -150,28 +151,29 @@
                       <div class="poderes__radio__tipo">
                         <label for="tipoPersonaje">Tipo de personaje</label>
                       </div>
-
-                      <div class="poderes__checkbox__input">
-                        <label for="heroiHeroina">
-                          <input
-                            type="radio"
-                            name="heroiHeroina"
-                            id="heroiHeroina"
-                            value="heroiHeroina"
-                          />
-                          Herói / Heroína
-                        </label>
-                      </div>
-                      <div>
-                        <label for="vilaoVila">
-                          <input
-                            type="radio"
-                            name="vilaoVila"
-                            id="vilaoVila"
-                            value="vilaoVila"
-                          />
-                          Vilão / Vilã
-                        </label>
+                      <div class="poderes__radio__input__p">
+                        <div class="poderes__radio__input">
+                          <label for="heroiHeroina">
+                            <input
+                              type="radio"
+                              name="heroiHeroina"
+                              id="heroiHeroina"
+                              value="heroiHeroina"
+                            />
+                            <span>Herói / Heroína</span>
+                          </label>
+                        </div>
+                        <div class="poderes__radio__input">
+                          <label for="vilaoVila">
+                            <input
+                              type="radio"
+                              name="vilaoVila"
+                              id="vilaoVila"
+                              value="vilaoVila"
+                            />
+                            <span>Vilão / Vilã</span>
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -186,12 +188,6 @@
       </main>
       <footer class="footer">
         <p>Todos os direitos reservados a FRONT END I</p>
-        <a
-          class="github"
-          href="https://github.com/decapitaneo/Front-End/tree/main/Aula14"
-        >
-          <img src="img/github.png" alt="" />
-        </a>
       </footer>
     </div>
   </body>

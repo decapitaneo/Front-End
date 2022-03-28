@@ -64,9 +64,11 @@ nav {
 }
 
 main {
+  width: 80%; /*ocupa 70% da minha pagina principal*/
+  margin: auto;
 }
 .formulario {
-  width: 70%; /*ocupa 70% da minha pagina principal*/
+  width: 80%; /*ocupa 70% da minha pagina principal*/
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -189,16 +191,15 @@ fieldset {
   line-height: 24px;
   margin-bottom: 35px;
 }
-/*
-.add__photo input {
-  margin-top: 35px;
+
+.add__photo__arq__span span {
   font-style: normal;
   font-weight: 300;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 14px;
   color: #000000;
 }
-*/
+
 input[type='file'] {
   display: none;
 }
@@ -227,12 +228,14 @@ input[type='file'] {
   line-height: 12px;
   color: #000000;
 }
-.input__file input[type='file']::placeholder {
-}
 
 .descricao__poderes {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
 }
 .descricao {
 }
@@ -251,30 +254,41 @@ input[type='file'] {
   border-radius: 15.3407px;
 }
 .poderes__personages {
+  width: 100%;
   padding-left: 26px;
   font-style: normal;
   color: #ffffff;
 }
-.poderes {
-}
+
 .poderes legend {
   font-weight: 300;
   font-size: 20px;
   line-height: 26px;
   font-style: normal;
-  padding-bottom: 16px;
+  padding-bottom: 12px;
 }
 .poderes__checkbox {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 19px;
+  font-family: 'Karla';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
   font-style: normal;
 }
 
 .poderes__checkbox__input {
   padding-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.poderes__checkbox__input p {
+  padding-left: 20px;
 }
 .poderes__checkbox input {
+  width: 24px;
+  height: 20px;
 }
 
 .poderes__radio__tipo {
@@ -286,20 +300,51 @@ input[type='file'] {
 }
 
 .poderes__radio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
   font-weight: 400;
+  font-family: 'Karla';
   font-size: 20px;
   line-height: 26px;
   font-style: normal;
+  border-top: 1px solid white;
+  padding-top: 10px;
 }
+
+.poderes__radio input {
+  width: 20px;
+  height: 20px;
+}
+
+.poderes__radio__input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.poderes__radio__input span {
+  padding-left: 20px;
+}
+.poderes__radio__input__p {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #1cd1b0;
   border-radius: 23.011px;
   padding-top: 22px;
   padding-left: 138px;
   padding-bottom: 22px;
   padding-right: 138px;
-  margin-top: 45px;
-  margin-left: 244px;
+  margin: auto;
   margin-bottom: 18px;
 }
 .btn__adicionar a {
@@ -311,11 +356,21 @@ button {
   text-align: center;
   color: #000000;
 }
-footer .footer .footer p {
+
+footer {
+  background: #00669f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 61px;
+  margin-top: 39px;
 }
 
-.footer a {
-}
-
-.footer img {
+.footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 21px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
