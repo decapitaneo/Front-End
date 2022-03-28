@@ -47,33 +47,18 @@ nav ul li a {
 
 nav ul li a::before {
   content: '';
-  background: #c79800;
+  height: 5px; /*crio um 'conteúdo' de altura de 5px */
+  background: var(--decoration-color);
   position: absolute;
   bottom: -10px;
-  height: 5px;
+  width: 0%;
+  transition: ease-in 1s;
 
   /*dica: width iniciando em 0 e aplicação de uma transição*/
 }
 
 nav ul li a:hover::before {
   width: 100%;
-}
-
-nav ul li a:hover::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 4px;
-  bottom: 0;
-  left: 0;
-  background-color: #c79800;
-  transform-origin: bottom left;
-  transition: 0.5s;
-}
-nav ul li a:hover::before {
-  transform: scaleX(0);
-  transform-origin: bottom right;
 }
 
 /* Barra redes sociais*/
@@ -93,7 +78,7 @@ nav ul li a:hover::before {
   background: var(--primary-color);
   padding: 10px 15px;
   text-decoration: none;
-  transition: 1s;
+  transition: all 500ms ease;
 }
 
 .social ul li .icon-facebook {
@@ -113,9 +98,9 @@ nav ul li a:hover::before {
 }
 
 .social li a:hover {
-  transform: scaleX(1.5);
+  background: var(--primary-color);
+  padding: 10px 30px;
 
-  background-color: #000;
   /* transform: ; */
 }
 
